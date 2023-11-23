@@ -19,7 +19,6 @@ public class ManagerLocator : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            //comentary
         }
         else
         {
