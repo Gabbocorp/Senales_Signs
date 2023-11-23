@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManagerLocator : MonoBehaviour
 {
-    // Declaración de las instancias de tus administradores
+    // Declaraciï¿½n de las instancias de tus administradores
     public GameManager _gameManager;
     public CamerasManager _camerasManager;
     public SoundManager _soundManager;
@@ -14,11 +14,12 @@ public class ManagerLocator : MonoBehaviour
 
     private void Awake()
     {
-        // Asegúrate de que solo haya una instancia de ManagerLocator en la escena
+        // Asegï¿½rate de que solo haya una instancia de ManagerLocator en la escena
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            //comentary
         }
         else
         {
@@ -26,7 +27,7 @@ public class ManagerLocator : MonoBehaviour
         }
     }
 
-    // Métodos para obtener referencias a los administradores
+    // Mï¿½todos para obtener referencias a los administradores
     public static GameManager GetGameManager()
     {
         return instance._gameManager;
